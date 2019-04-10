@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const client2 = new Discord.Client();
 
 client.on('message', message => {
-    var prefix = ".";
+    var prefix = "¤";
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
       var argresult = args.join(' ');
@@ -32,3 +32,5 @@ client.on('message', message => {
     });
 
 
+
+client.login(process.env.BOT_TOKEN);// Blood Code
