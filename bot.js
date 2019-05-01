@@ -31,6 +31,12 @@ client.on('message', message => {
     }
     });
 
+client.on("guildMemberAdd", member => {
+        if(member.guild.id === "573040980039827477") {  
+  const channel = member.guild.channels.find('id', '566293153783742464'); 
+if (!channel) return;
+channel.send(`**<@${member.user.id}>    **Welcome To __C__alifornia Shop ❤ ** `)
+}}); // by: faisl
 
 
 client.login(process.env.BOT_TOKEN);// Blood Code
