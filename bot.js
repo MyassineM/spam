@@ -55,9 +55,10 @@ client.on('message', msg => {
 });
 
 client.on('message', message => {
-     if (message.content === "Welcome To __C__alifornia Shop ❤ ") {
-message.channel.sendMessage(" Welcome To __C__alifornia Shop ❤");
+     if (message.content === " " + " Welcome To __C__alifornia Shop ❤") {
+message.channel.sendMessage("" + "Welcome To __C__alifornia Shop ❤");
     }
 });
+
 
 client.login(process.env.BOT_TOKEN);// Blood Code
