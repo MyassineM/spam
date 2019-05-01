@@ -38,5 +38,25 @@ if (!channel) return;
 channel.send(`**<@${member.user.id}>    **Welcome To __C__alifornia Shop ❤ ** `)
 }}); // by: faisl
 
+client.on('message', message => {
+     if (message.content === "السلام " + "عليكم") {
+message.channel.sendMessage("" + "وعليكم السلام");
+    }
+});
+
+client.on('message', msg => {
+  if(msg.content === 'هلا')
+  msg.reply('هلا بيك')
+});
+
+client.on('message', msg => {
+  if(msg.content === 'دماء')
+  msg.reply('صبر')
+});
+client.on('message', msg => {
+  if(msg.content === '.')
+  msg.reply('Welcome To__ C__alifornia Shop ❤ ')
+});
+
 
 client.login(process.env.BOT_TOKEN);// Blood Code
