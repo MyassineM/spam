@@ -54,14 +54,10 @@ client.on('message', msg => {
   msg.reply('صبر')
 });
 
-client.on('message', msg => {
-  if(msg.content === '.')
-  msg.reply('Welcome To__ C__alifornia Shop ❤ ')
-});
-
-client.on('message', msg => {
-  if(msg.content === ' Welcome To__ C__alifornia Shop ❤ ')
-  msg.reply('Welcome To__ C__alifornia Shop ❤ ')
+client.on('message', message => {
+     if (message.content === "Welcome To __C__alifornia Shop ❤ ") {
+message.channel.sendMessage(" Welcome To __C__alifornia Shop ❤");
+    }
 });
 
 client.login(process.env.BOT_TOKEN);// Blood Code
